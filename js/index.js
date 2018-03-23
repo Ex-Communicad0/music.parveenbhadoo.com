@@ -738,6 +738,11 @@ $(document).ready(function() {
       'title': 'Rabba',
       'file': 'https://github.com/audiofiles/mohitpathak/releases/download/2.0/Rabba.Mohit.Pathak.ft.Nidhi.Uttam.Cover.Never.Enough.Latest.Hit.Song.mp3'
     }]
+    [{
+      'icon': iconImage,
+      'title': 'Sochta Hun K',
+      'file': 'https://github.com/ParveenBhadooOfficial/music/releases/download/1.0/sochta-hun-k-vo-kitne-masoom-they.mp3'
+    }]
   });
 
 
