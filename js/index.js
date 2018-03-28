@@ -742,6 +742,11 @@ $(document).ready(function() {
       'title': 'Sochta Hun K',
       'file': 'https://github.com/ParveenBhadooOfficial/music/releases/download/1.0/sochta-hun-k-vo-kitne-masoom-they.mp3'
     }]
+    }, {
+      'icon': iconImage,
+      'title': 'Dil Ne Ye Kaha Hai Dilse',
+      'file': 'https://github.com/ParveenBhadooOfficial/music/releases/download/1.01/Dil_Ne_Yeh_Kaha_Hai_Dil_Se_-_Dhadkan_HD.mp3'
+    }]
   });
 
 
