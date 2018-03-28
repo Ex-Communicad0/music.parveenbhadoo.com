@@ -741,7 +741,6 @@ $(document).ready(function() {
       'icon': iconImage,
       'title': 'Sochta Hun K',
       'file': 'https://github.com/ParveenBhadooOfficial/music/releases/download/1.0/sochta-hun-k-vo-kitne-masoom-they.mp3'
-    }]
     }, {
       'icon': iconImage,
       'title': 'Dil Ne Ye Kaha Hai Dilse',
