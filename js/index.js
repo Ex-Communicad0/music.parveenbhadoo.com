@@ -730,7 +730,7 @@ $(document).ready(function() {
   })(window);
 
   // TEST: image for web notifications
-  var iconImage = 'http://funkyimg.com/i/21pX5.png';
+  var iconImage = '/21pX5.png';
 
   AP.init({
     playList: [{
