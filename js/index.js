@@ -735,15 +735,19 @@ $(document).ready(function() {
   AP.init({
     playList: [{
       'icon': iconImage,
-      'title': 'Rabba',
+      'title': 'Rabba - Mohit Pathak',
       'file': 'https://github.com/audiofiles/mohitpathak/releases/download/2.0/Rabba.Mohit.Pathak.ft.Nidhi.Uttam.Cover.Never.Enough.Latest.Hit.Song.mp3'
      }, {
       'icon': iconImage,
-      'title': 'Sochta Hun K',
+      'title': 'Sochta Hun K - Nusrat Fateh Ali Khan',
       'file': 'https://github.com/ParveenBhadooOfficial/music/releases/download/1.0/sochta-hun-k-vo-kitne-masoom-they.mp3'
     }, {
       'icon': iconImage,
-      'title': 'Dil Ne Ye Kaha Hai Dilse',
+      'title': 'Jhoothi - Bilal Saeed',
+      'file': 'https://github.com/ParveenBhadooOfficial/music/releases/download/1.02/Jhoothi.-.Bilal.Saeed.mp3'
+    }, {
+      'icon': iconImage,
+      'title': 'Dil Ne Ye Kaha Hai Dilse - Sonu Nigam, Alka Yagnik',
       'file': 'https://github.com/ParveenBhadooOfficial/music/releases/download/1.01/Dil_Ne_Yeh_Kaha_Hai_Dil_Se_-_Dhadkan_HD.mp3'
     }]
   });
