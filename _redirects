@@ -1,9 +1,6 @@
 # Redirect domain aliases to primary domain
-https://bhadoo.ga/* https://music.industries.parveenbhadoo.com/:splat 301!
-https://www.bhadoo.ga/* https://music.industries.parveenbhadoo.com/:splat 301!
-https://music.bhadootelecom.com/* https://music.industries.parveenbhadoo.com/:splat 301!
-https://music.hashhackers.com/* https://music.industries.parveenbhadoo.com/:splat 301!
-https://music.parveenbhadoo.com/* https://music.industries.parveenbhadoo.com/:splat 301!
+https://bhadoo.ga/* https://music.parveenbhadoo.com/:splat 301!
+https://www.bhadoo.ga/* https://music.parveenbhadoo.com/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
-https://parveenbhadoo-music.netlify.com/* https://music.industries.parveenbhadoo.com/:splat 301!
+https://parveenbhadoo-music.netlify.com/* https://music.parveenbhadoo.com/:splat 301!
