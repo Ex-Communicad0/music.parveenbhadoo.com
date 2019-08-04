@@ -736,19 +736,27 @@ $(document).ready(function() {
     playList: [{
       'icon': iconImage,
       'title': 'Rabba - Mohit Pathak',
-      'file': 'https://github.com/audiofiles/mohitpathak/releases/download/2.0/Rabba.Mohit.Pathak.ft.Nidhi.Uttam.Cover.Never.Enough.Latest.Hit.Song.mp3'
+      'file': 'https://cdn.jsdelivr.net/gh/jscdn/mp3@1.0.0/Rabba-Mohit-Pathak.mp3'
      }, {
       'icon': iconImage,
-      'title': 'Sochta Hun K - Nusrat Fateh Ali Khan',
-      'file': 'https://github.com/ParveenBhadooOfficial/music/releases/download/1.0/sochta-hun-k-vo-kitne-masoom-they.mp3'
+      'title': 'Roi Na - Female Cover',
+      'file': 'https://cdn.jsdelivr.net/gh/jscdn/mp3@1.0.0/Roi-Na-Ninja-Chakshu-Kotwal-Female-Cover.mp3'
     }, {
       'icon': iconImage,
       'title': 'Jhoothi - Bilal Saeed',
-      'file': 'https://github.com/ParveenBhadooOfficial/music/releases/download/1.02/Jhoothi.-.Bilal.Saeed.mp3'
+      'file': 'https://cdn.jsdelivr.net/gh/jscdn/mp3@1.0.0/Jhoothi-Bilal-Saeed.mp3'
     }, {
       'icon': iconImage,
-      'title': 'Roi Na - Female Cover',
-      'file': 'https://github.com/ParveenBhadooOfficial/music/releases/download/1.01/Dil_Ne_Yeh_Kaha_Hai_Dil_Se_-_Dhadkan_HD.mp3'
+      'title': 'Sochta Hun k Wo Kitne Masoom They',
+      'file': 'https://cdn.jsdelivr.net/gh/jscdn/mp3@1.0.0/Sochta-Hun-K-Vo-Kitne-Masoom-They.mp3'
+    } {
+      'icon': iconImage,
+      'title': 'Galiyaan - Ek Villian',
+      'file': 'https://cdn.jsdelivr.net/gh/jscdn/mp3@1.0.0/Galliyan-Ek-Villian.mp3'
+    },{
+      'icon': iconImage,
+      'title': 'Hindi Punjabi Sad Mashup - Acoustic Singh',
+      'file': 'https://cdn.jsdelivr.net/gh/jscdn/mp3@1.0.1/Hindi-vs-Punjabi-Mashup-Sad-Version-Acoustic-Singh-Deepshikha.mp3'
     }]
   });
 
