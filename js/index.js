@@ -730,7 +730,7 @@ $(document).ready(function() {
   })(window);
 
   // TEST: image for web notifications
-  var iconImage = '/21pX5.png';
+  var iconImage = 'https://cdn.jsdelivr.net/gh/jscdn/images@1.0.0/icon.png';
 
   AP.init({
     playList: [{
@@ -747,7 +747,7 @@ $(document).ready(function() {
       'file': 'https://github.com/ParveenBhadooOfficial/music/releases/download/1.02/Jhoothi.-.Bilal.Saeed.mp3'
     }, {
       'icon': iconImage,
-      'title': 'Dil Ne Ye Kaha Hai Dilse - Sonu Nigam, Alka Yagnik',
+      'title': 'Roi Na - Female Cover',
       'file': 'https://github.com/ParveenBhadooOfficial/music/releases/download/1.01/Dil_Ne_Yeh_Kaha_Hai_Dil_Se_-_Dhadkan_HD.mp3'
     }]
   });
