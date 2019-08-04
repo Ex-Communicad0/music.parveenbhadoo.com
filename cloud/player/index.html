@@ -1,114 +1,76 @@
 <!DOCTYPE html>
 <html lang='en'>
-   <title>Custom Song Player - Bhadoo Music</title>
-   <head>
-      <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-      <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/icons/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/icons/favicon-16x16.png">
-      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jscdn/css@1.0.3/music/cloud-style.css" integrity="sha384-AeFHsUo9+wGMR1AEKwHhOC7qunknGE98BJA8SRNfSZYRaB50W2wSGRdm78F6Te0i" crossorigin="anonymous">  
-<style>
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
 
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+<head>
+    <title>Custom Song Player - Bhadoo Music</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/icons/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jscdn/css@1.0.3/music/cloud-style.css" integrity="sha384-AeFHsUo9+wGMR1AEKwHhOC7qunknGE98BJA8SRNfSZYRaB50W2wSGRdm78F6Te0i" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jscdn/css@1.0.4/music/song-url-form.css" integrity="sha384-XWidsQ/eP5G7tvV1vbdxgaJzK3EFBxTnDsqxNwtmA27lKxeLHYcpc4t51V13FAUN" crossorigin="anonymous">
+</head>
 
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-</style>
-      </head>
-   <body>
-      <div class="container">
-         <div class="content">
+<body>
+    <div class="container">
+        <div class="content">
             <div class="message">
-               <center>
-                  <img src="https://cdn.jsdelivr.net/gh/jscdn/images@1.0.0/music.jpg" alt="Bhadoo Music">
+                <center>
+                    <img src="https://cdn.jsdelivr.net/gh/jscdn/images@1.0.0/music.jpg" alt="Bhadoo Music">
 
-  <form id="switch">
-    <input type="text" id="surl1" name="url" placeholder="Song URL Here">
-    </select>
-  
-    <input type="submit" value="Submit">
-  </form>
+                    <form id="switch">
+                        <input type="text" id="surl1" name="url" placeholder="Song URL Here">
+                        </select>
 
-               </center>
+                        <input type="submit" value="Submit">
+                    </form>
+
+                </center>
             </div>
             <div class="audio green-audio-player">
-               <div class="loading">
-                  <div class="spinner"></div>
-               </div>
-               <div class="play-pause-btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
-                     <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause"/>
-                  </svg>
-               </div>
-               <div class="controls">
-                  <span class="current-time">0:00</span>
-                  <div class="slider" data-direction="horizontal">
-                     <div class="progress">
-                        <div class="pin" id="progress-pin" data-method="rewind"></div>
-                     </div>
-                  </div>
-                  <span class="total-time">0:00</span>
-               </div>
-               <div class="volume">
-                  <div class="volume-btn">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="#566574" fill-rule="evenodd" d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z" id="speaker"/>
-                     </svg>
-                  </div>
-                  <div class="volume-controls hidden">
-                     <div class="slider" data-direction="vertical">
+                <audio crossorigin>
+                    <source id="srcid" src="" type="audio/mpeg">
+                </audio>
+                <script src="https://cdn.jsdelivr.net/gh/jscdn/js@1.0.1/music/player.js" integrity="sha384-TEtFiT/q7E5xxq6yZ2L4qHRiNyGX4KVconCqWRewuDji8Xn3TTCXzlEbzsRGbTIH" crossorigin="anonymous"></script>
+                <div class="loading">
+                    <div class="spinner"></div>
+                </div>
+                <div class="play-pause-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+                        <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause" />
+                    </svg>
+                </div>
+                <div class="controls">
+                    <span class="current-time">0:00</span>
+                    <div class="slider" data-direction="horizontal">
                         <div class="progress">
-                           <div class="pin" id="volume-pin" data-method="changeVolume"></div>
+                            <div class="pin" id="progress-pin" data-method="rewind"></div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <audio crossorigin>
-                  <source id="srcid" src="" type="audio/mpeg">
-               </audio>
+                    </div>
+                    <span class="total-time">0:00</span>
+                </div>
+                <div class="volume">
+                    <div class="volume-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="#566574" fill-rule="evenodd" d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z" id="speaker" />
+                        </svg>
+                    </div>
+                    <div class="volume-controls hidden">
+                        <div class="slider" data-direction="vertical">
+                            <div class="progress">
+                                <div class="pin" id="volume-pin" data-method="changeVolume"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <p>Go to <a href="/" >Homepage</a>
-         </div>
-      </div>
-      <script src="https://cdn.jsdelivr.net/gh/jscdn/js@1.0.0/music/cloud-script.js" integrity="sha256-8jF4yn2DlVGQexsA6o5Aunme6eiah07jCMW1qtNS3IE=" crossorigin="anonymous"></script>
-<script>
-source = document.getElementById('srcid');
-var getUrlParameter = function getUrlParameter(sParam) {
-    var sPageURL = window.location.search.substring(1),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
+            <p>Go to <a href="/">Homepage</a>
+        </div>
+    </div>
 
-    for (i = 0; i < sURLVariables.length; i++) {
-        sParameterName = sURLVariables[i].split('=');
+    <script src="https://cdn.jsdelivr.net/gh/jscdn/js@1.0.0/music/cloud-script.js" integrity="sha256-8jF4yn2DlVGQexsA6o5Aunme6eiah07jCMW1qtNS3IE=" crossorigin="anonymous"></script>
+</body>
 
-        if (sParameterName[0] === sParam) {
-            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
-        }
-    }
-};
-var surl = getUrlParameter('url');
-source.src = surl;
-</script>
-   </body>
 </html>
