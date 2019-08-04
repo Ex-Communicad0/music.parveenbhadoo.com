@@ -749,11 +749,11 @@ $(document).ready(function() {
       'icon': iconImage,
       'title': 'Sochta Hun k Wo Kitne Masoom They',
       'file': 'https://cdn.jsdelivr.net/gh/jscdn/mp3@1.0.0/Sochta-Hun-K-Vo-Kitne-Masoom-They.mp3'
-    } {
+    }, {
       'icon': iconImage,
       'title': 'Galiyaan - Ek Villian',
       'file': 'https://cdn.jsdelivr.net/gh/jscdn/mp3@1.0.0/Galliyan-Ek-Villian.mp3'
-    },{
+    }, {
       'icon': iconImage,
       'title': 'Hindi Punjabi Sad Mashup - Acoustic Singh',
       'file': 'https://cdn.jsdelivr.net/gh/jscdn/mp3@1.0.1/Hindi-vs-Punjabi-Mashup-Sad-Version-Acoustic-Singh-Deepshikha.mp3'
