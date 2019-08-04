@@ -32,7 +32,25 @@
                 <audio crossorigin>
                     <source id="srcid" src="" type="audio/mpeg">
                 </audio>
-                <script src="https://cdn.jsdelivr.net/gh/jscdn/js@1.0.1/music/player.js" integrity="sha384-TEtFiT/q7E5xxq6yZ2L4qHRiNyGX4KVconCqWRewuDji8Xn3TTCXzlEbzsRGbTIH" crossorigin="anonymous"></script>
+                <script>
+                source = document.getElementById('srcid');
+                var getUrlParameter = function getUrlParameter(sParam) {
+                    var sPageURL = window.location.search.substring(1),
+                        sURLVariables = sPageURL.split('&'),
+                        sParameterName,
+                        i;
+
+                    for (i = 0; i < sURLVariables.length; i++) {
+                        sParameterName = sURLVariables[i].split('=');
+
+                        if (sParameterName[0] === sParam) {
+                            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                        }
+                    }
+                };
+                var surl = getUrlParameter('url');
+                source.src = surl;
+                </script>
                 <div class="loading">
                     <div class="spinner"></div>
                 </div>
